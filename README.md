@@ -36,7 +36,7 @@ gave accurate results.
 ---
 
 ##### Extended features
-- [ ] Expand testing to include tests for cases with error or outside range values.
+- [x] Expand testing to include tests for cases with error or outside range values.
 - [ ] Add function to display the functionality of the functions.
 - [ ] Add print statement to the tests so the user can see what happens as the tests are ran.
 - [ ] Take data from an outside source, such as text file, .csv file for excel document, and 
