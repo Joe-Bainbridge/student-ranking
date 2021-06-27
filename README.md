@@ -27,6 +27,8 @@ For development and testing, a virtual environment created using the pycharm IDE
 
 The dependency manager pipenv was used for this project.
 
+To run the example program, run the example_program.py file
+
 ---
 
 In this project I used test driven development. This means that I wrote the tests before I 
@@ -37,8 +39,9 @@ gave accurate results.
 
 ##### Extended features
 - [x] Expand testing to include tests for cases with error or outside range values.
-- [ ] Add function to display the functionality of the functions.
 - [ ] Add print statement to the tests so the user can see what happens as the tests are ran.
-- [ ] Take data from an outside source, such as text file, .csv file for excel document, and 
-process and return average test and progress scores for this data in a table printed in the console,
-or append this data to the outside source.
+- [x] Example program to showcase functions. Program will take data from file, and use the
+functions using some of this data, and then print a report with the results
+- [ ] Allow example program to have other inputs than a text file, such as a .csv file or excel
+document
+- [ ] Make example program print report in a formatted table
