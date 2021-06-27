@@ -1,7 +1,7 @@
-#Student ranking program
+# Student ranking program
 
 
-#####This program is made up of three files:
+##### This program is made up of three files:
 
 - progress_score.py
 - average_test_score.py
@@ -35,7 +35,7 @@ gave accurate results.
 
 ---
 
-#####Extended features
+##### Extended features
 - [ ] Expand testing to include tests for cases with error or outside range values.
 - [ ] Add function to display the functionality of the functions.
 - [ ] Add print statement to the tests so the user can see what happens as the tests are ran.
