@@ -1,2 +1,2 @@
 def calculate_progress_score(math, english, science):
-    return 0
+    return (math+english+science)/3
