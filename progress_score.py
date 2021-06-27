@@ -1,2 +1,2 @@
 def calculate_progress_score(mock_result, actual_result):
-    return 0
+    return round(((actual_result-mock_result)/10), 1)
