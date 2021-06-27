@@ -24,7 +24,7 @@ def test_progress_score():
     for x in range(100):
         val1 = randint(0, 100)
         val2 = randint(0, 100)
-        expected_val = round(((val2-val1)/10), 1)
+        expected_val = round(((val2 - val1) / 10), 1)
         assert calculate_progress_score(val1, val2) == expected_val
 
 
