@@ -1,6 +1,8 @@
 from average_test_score import calculate_average_test_score
 from progress_score import calculate_progress_score
+from exceptions import OutsideRangeError
 from random import randint
+import pytest
 
 
 def test_progress_score():
@@ -26,6 +28,11 @@ def test_progress_score():
         val2 = randint(0, 100)
         expected_val = round(((val2 - val1) / 10), 1)
         assert calculate_progress_score(val1, val2) == expected_val
+    # test fail cases
+    with pytest.raises(Exception):
+        assert calculate_progress_score("three", 1) == -0.2
+    with pytest.raises(OutsideRangeError):
+        calculate_progress_score(960, 99) == 0.3
 
 
 def test_average_test_score():
@@ -49,3 +56,8 @@ def test_average_test_score():
         val3 = randint(0, 100)
         expected_val = round((val1 + val2 + val3) / 3, 2)
         assert calculate_average_test_score(val1, val2, val3) == expected_val
+    # test fail cases
+    with pytest.raises(Exception):
+        calculate_average_test_score("one", 4, 2) == 2.33
+    with pytest.raises(OutsideRangeError):
+        calculate_average_test_score(1, 400, 2) == 2.33
