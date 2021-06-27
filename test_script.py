@@ -6,7 +6,6 @@ from random import randint
 def test_progress_score():
     # example test cases
     assert calculate_progress_score(80, 75) == -0.5
-    assert calculate_progress_score(57, 65) == -0.8
     assert calculate_progress_score(50, 80) == 3
     assert calculate_progress_score(99, 88) == -1.1
     # edge cases
